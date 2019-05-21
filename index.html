@@ -7,8 +7,11 @@
   </head>
   <body>
     <header id="header">
-      <img src="logo.png" alt="money sign logo" id="header-img">
-      <h1 id="title">EasyTrack</h1>
+      <div class="logo">
+        <img src="logo.png" alt="money sign logo" id="header-img">
+        <h1 id="title">EasyTrack</h1>
+      </div>
+
       <nav id="nav-bar">
         <ul>
           <li><a class="nav-link" href="#how-it-works">How it works</a></li>
@@ -18,50 +21,38 @@
       </nav>
     </header>
 
+
+    <section id="hero">
+      <h2>Don't lose track of your spending.<br>Automate your tracking with EasyTrack.</h2>
+      <form id="learn-more-form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" name="email" id="email" placeholder="Your email address..." required>
+        <input type="submit" id="submit" value="Get Started!" class="btn">
+      </form>
+    </section>
     <div class="container">
-      <section id="front-page">
-        <div class="front-page-grid">
-          <div class="front-page-visuals">
-            <img id="front-page-logo" src="logo.png" alt="money sign logo">
-            <h1 id="front-page-title">Easy Track</h1>
-          </div>
-          <div class="description">
-            <p>Don't lose track of your spending.<br>Automate your tracking with EasyTrack.</p>
-          </div>
-        </div>
-      </section>
       <section id="how-it-works" name="how-it-works">
         <div class="grid">
-          <div class="number">
-            <p>1</p>
+          <div class="instructions-img-div">
+            <img src="logo.png" class="instructions-img" alt="">
           </div>
           <div class="instructions">
             <p>Set up automatic email notifications from your bank for your transactions.</p>
           </div>
-          <div class="instructions-img-div">
-            <img src="" alt="">
-          </div>
         </div>
         <div class="grid">
-          <div class="grid">
-            <p>2</p>
+          <div class="instructions-img-div">
+            <img src="logo.png" class="instructions-img" alt="">
           </div>
           <div class="instructions">
             <p>Create a Google Sheet and run EasyTrack on your home computer or server.</p>
           </div>
-          <div class="instructions-img-div">
-            <img src="" alt="">
-          </div>
         </div>
         <div class="grid">
-          <div class="grid">
-            <p>3</p>
+          <div class="instructions-img-div">
+            <img src="logo.png" class="instructions-img" alt="">
           </div>
           <div class="instructions">
             <p>View your spending report.</p>
-          </div>
-          <div class="instructions-img-div">
-            <img src="" alt="">
           </div>
         </div>
       </section>
@@ -85,17 +76,6 @@
           </div>
         </div>
       </section>
-
-      <section id="learn-more" name="learn-more">
-        <div id="contact-request">
-          <h2>Want to learn more?<br>Contact us!</h2>
-        </div>
-        <form id="learn-more-form" action="https://www.freecodecamp.com/email-submit">
-          <input type="email" name="email" id="email" placeholder="Your email address..." required>
-          <input type="submit" id="submit" value="Get Started!" class="btn">
-        </form>
-      </section>
-
       <footer>
         <ul>
           <li>
