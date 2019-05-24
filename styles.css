@@ -14,6 +14,8 @@ a {
 
 body {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 header {
@@ -25,7 +27,7 @@ header {
   justify-content: space-between;
   opacity: .9;
   z-index: 99999;
-  height: 90px;
+  height: 80px;
 }
 
 .logo {
@@ -34,12 +36,13 @@ header {
   align-self: flex-end;
   align-items: center;
   width: 30%;
+  margin-left: 20px;
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
-
+  width: 15%;
+  height: 15%;
+  padding-right: 10px;
 }
 
 .logo h1 {
@@ -54,7 +57,7 @@ nav {
   /* float: right; */
   /* margin-left: auto; */
   justify-content: flex-end;
-  width: 50%;
+  width: 30%;
   height: 100%;
 
   /* border: 2px solid green; */
@@ -69,13 +72,19 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  width: 100%;
+
   /* margin-right: 50px; */
 }
 
 nav ul li {
   display: flex;
   border-left: 2px solid #298e25;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  flex-grow: 1;
+  justify-content: center;
+  /* width: 50%; */
   /* align-content: stretch; */
   /* align-items: stretch; */
   /* float: left; */
@@ -89,6 +98,7 @@ nav ul li a {
   /* display: inline-block; */
   padding: 14px 16px;
   color: black;
+  font-size: 20px;
 }
 
 .instructions-img {
@@ -101,6 +111,9 @@ nav ul li a {
 .container {
   position: relative;
   top: 90px;
+  border: 2px solid black;
+  width: 80%;
+  background-color: #d7d9dd;
 }
 
 #hero {
@@ -154,13 +167,20 @@ hr {
 }
 
 .instructions-img-div {
-  /* align-self: flex-start; */
-  /* border: 2px solid green; */
 
 }
 
 .instructions-img {
   border: 1px solid gray;
+  height: 200px;
+  width: 400px;
+  /* height: 50%; */
+  /* width: 50%; */
+}
+
+#grid2 {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .instructions {
@@ -169,8 +189,90 @@ hr {
   align-items: center;
 }
 
+#instructions2 {
+  padding-right: 90px;
+  /* border: 2px solid red; */
+}
+
+#instructions2 h3 {
+  width: 250px;
+}
+
+#watch-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 70%;
+}
+
+.videoWrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /* position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; */
+}
+
+iframe {
+  max-width: 560px;
+  width: 100%;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  /* height: 100%; */ */
+}
+
 #pricing {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#pricing-instructions {
+  margin-top: 40px;
+}
+
+#pricing-table {
+  display: flex;
+  /* border: 2px solid gray; */
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.price-listing {
+  border: 2px solid gray;
+  width: 30%;
+  text-align: center;
+}
+
+.price-listing h3 {
+  font-size: 20px;
+  background-color: gray;
+}
+
+.price {
+  font-size: 45px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 30px;
+  background-color: gray;
+  margin-top: 50px;
+}
+
+footer ul {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 30px;
+  margin-left: 20px;
 }

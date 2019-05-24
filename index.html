@@ -9,6 +9,7 @@
     <header id="header">
       <div class="logo">
         <img src="logo.png" alt="money sign logo" id="header-img">
+        <!-- <img src="https://banner2.kisspng.com/20180203/kuw/kisspng-dollar-sign-clip-art-money-signs-5a763bdaecd8d0.4636975115176980109701.jpg" alt="money sign logo" id="header-img"> -->
         <h1 id="title">EasyTrack</h1>
       </div>
 
@@ -16,7 +17,7 @@
         <ul>
           <li><a class="nav-link" href="#how-it-works">How it works</a></li>
           <li><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link" href="#learn-more">Learn more</a></li>
+          <li><a class="nav-link" href="#form">Learn more</a></li>
         </ul>
       </nav>
     </header>
@@ -24,7 +25,7 @@
     <div class="container">
       <section id="hero">
         <h2>Don't lose track of your spending.<br>Automate your tracking with EasyTrack.</h2>
-        <form id="learn-more-form" action="https://www.freecodecamp.com/email-submit">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input type="email" name="email" id="email" placeholder="Your email address..." required>
           <input type="submit" id="submit" value="Get Started!" class="btn">
         </form>
@@ -34,29 +35,38 @@
       <section id="how-it-works" name="how-it-works">
         <div class="grid">
           <div class="instructions-img-div">
-            <img src="alerts.jpg" class="instructions-img" alt="">
+            <img src="alerts.jpg" class="instructions-img" alt="USBank notifications tool" id="instructions-img-1">
           </div>
           <div class="instructions">
-            <h3>Set up automatic email notifications from your bank for your transactions.</h3>
+            <h3>1. Set up automatic email notifications from your bank for your transactions.</h3>
+          </div>
+        </div>
+        <div class="grid" id="grid2">
+          <div class="instructions-img-div">
+            <img src="alerts-empty.png" class="instructions-img" alt="Empty Google Sheet" id="instructions-img-2">
+          </div>
+          <div class="instructions" id="instructions2">
+            <h3>2. Create a Google Sheet and run EasyTrack on your home computer or server.</h3>
           </div>
         </div>
         <div class="grid">
           <div class="instructions-img-div">
-            <img src="sheet-empty.png" class="instructions-img" alt="">
+            <img src="alerts-full.png" class="instructions-img" alt="Spending report" id="instructions-img-3">
           </div>
           <div class="instructions">
-            <p>Create a Google Sheet and run EasyTrack on your home computer or server.</p>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="instructions-img-div">
-            <img src="sheet.png" class="instructions-img" alt="">
-          </div>
-          <div class="instructions">
-            <p>View your spending report.</p>
+            <h3>3. View your spending report.</h3>
           </div>
         </div>
       </section>
+      <hr>
+
+      <section id="watch-more">
+        <h2>Learn more about how EasyTrack works under the hood</h2>
+        <div class="videoWrapper">
+          <iframe id="video" frameborder="0" height="315" src="https://www.youtube.com/embed/vISRn5qFrkM" width="" height="" allowfullscreen></iframe>
+        </div>
+      </section>
+      <hr>
 
       <section id="pricing" name="pricing">
         <div id="pricing-instructions">
@@ -64,16 +74,19 @@
         </div>
         <div id="pricing-table">
           <div class="price-listing">
-            <h3>$0.99</h3>
-            <p>/month</p>
+            <h3>Basic</h3>
+            <p class="price">$0.99</p>
+            <p class="period">/month</p>
           </div>
           <div class="price-listing">
-            <h3>$4.99</h3>
-            <p>/6 months</p>
+            <h3>Regular</h3>
+            <p class="price">$4.99</p>
+            <p class="period">/6 months</p>
           </div>
           <div class="price-listing">
-            <h3>$9.99</h3>
-            <p>/year</p>
+            <h3>Full</h3>
+            <p class="price">$9.99</p>
+            <p class="period">/year</p>
           </div>
         </div>
       </section>
@@ -92,5 +105,6 @@
         <span>Copyright © 2019 EasyTrack</span>
       </footer>
     </div>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   </body>
 </html>
