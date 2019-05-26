@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 li {
@@ -16,23 +15,29 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: #e1e2d9;
 }
 
 header {
   position: fixed;
   width: 100%;
   display: flex;
-  background: #28a323;
-  /* border: 2px solid red; */
+  background-color: #e1e2d9;
   justify-content: space-between;
-  opacity: .9;
+  opacity: 1;
   z-index: 99999;
   height: 80px;
+  /* border-bottom: 1px solid black; */
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
 }
 
 .logo {
   display: flex;
-  /* border: 2px solid blue; */
   align-self: flex-end;
   align-items: center;
   width: 30%;
@@ -50,44 +55,42 @@ header {
 }
 
 nav {
-  /* position: absolute; */
   display: flex;
-  /* align-content: stretch; */
   align-items: stretch;
-  /* float: right; */
-  /* margin-left: auto; */
   justify-content: flex-end;
-  width: 30%;
+  width: 50%;
   height: 100%;
-
-  /* border: 2px solid green; */
 }
+
+
 
 nav ul {
   display: flex;
-  /* float: right; */
-  /* justify-content: space-between; */
-  /* align-content: stretch; */
-  /* align-items: stretch; */
   margin: 0;
   padding: 0;
   overflow: hidden;
   width: 100%;
+}
 
-  /* margin-right: 50px; */
+@media (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
 }
 
 nav ul li {
   display: flex;
-  border-left: 2px solid #298e25;
+  /* border-left: 2px solid #298e25; */
   align-items: flex-end;
   padding-bottom: 5px;
   flex-grow: 1;
   justify-content: center;
-  /* width: 50%; */
-  /* align-content: stretch; */
-  /* align-items: stretch; */
-  /* float: left; */
+}
+
+@media (max-width: 650px) {
+  nav li {
+    padding-bottom: 1px;
+  }
 }
 
 nav ul li:hover {
@@ -95,7 +98,6 @@ nav ul li:hover {
 }
 
 nav ul li a {
-  /* display: inline-block; */
   padding: 14px 16px;
   color: black;
   font-size: 20px;
@@ -104,8 +106,6 @@ nav ul li a {
 .instructions-img {
   width: 100%;
   height: auto;
-  /* width: 200px; */
-  /* height: 200px; */
 }
 
 .container {
@@ -120,12 +120,10 @@ nav ul li a {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* border: 2px solid red; */
   align-items: center;
   justify-content: center;
   margin: auto;
   height: 130px;
-  /* margin-top: 50px; */
 }
 
 h2 {
@@ -135,7 +133,6 @@ h2 {
 
 form {
   position: relative;
-  /* padding-top: 50px; */
 }
 
 hr {
@@ -146,11 +143,7 @@ hr {
 
 #how-it-works {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   flex-direction: column;
-  /* align-items: flex-start; */
-  /* border: 2px solid blue; */
   width: 80%;
   margin: auto;
   margin-top: 50px;
@@ -160,22 +153,12 @@ hr {
 .grid {
   display: flex;
   margin: 50px;
-  /* border: 2px solid purple; */
-  /* margin: auto; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-}
-
-.instructions-img-div {
-
 }
 
 .instructions-img {
   border: 1px solid gray;
   height: 200px;
   width: 400px;
-  /* height: 50%; */
-  /* width: 50%; */
 }
 
 #grid2 {
@@ -191,7 +174,6 @@ hr {
 
 #instructions2 {
   padding-right: 90px;
-  /* border: 2px solid red; */
 }
 
 #instructions2 h3 {
@@ -204,26 +186,26 @@ hr {
   align-items: center;
   height: 500px;
   width: 70%;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .videoWrapper {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  /* position: relative;
+  position: relative;
+  width: 100%;
+  height: 0;
   padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 iframe {
-  max-width: 560px;
-  width: 100%;
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 0;
-  /* width: 100%; */
-  /* height: 100%; */ */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
 }
 
 #pricing {
@@ -238,7 +220,6 @@ iframe {
 
 #pricing-table {
   display: flex;
-  /* border: 2px solid gray; */
   width: 60%;
   justify-content: space-between;
   margin-top: 40px;
@@ -262,7 +243,7 @@ iframe {
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   height: 30px;
   background-color: gray;
   margin-top: 50px;
@@ -272,7 +253,7 @@ footer ul {
   display: flex;
   width: 15%;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   height: 30px;
   margin-left: 20px;
 }
